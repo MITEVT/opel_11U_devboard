@@ -50,36 +50,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4850 1600 5250 1600
-Wire Wire Line
-	5050 1800 5050 1700
-Wire Wire Line
-	5050 1700 4850 1700
-$Comp
-L CONN_01X02 P3
-U 1 1 55FDABAC
-P 4650 1650
-F 0 "P3" H 4650 1800 50  0000 C CNN
-F 1 "CONN_01X02" V 4750 1650 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 4650 1650 60  0001 C CNN
-F 3 "" H 4650 1650 60  0000 C CNN
-	1    4650 1650
-	-1   0    0    1   
-$EndComp
-Text HLabel 5250 1600 2    60   Output ~ 0
-+5V
-$Comp
-L GND #PWR030
-U 1 1 55FDAC37
-P 5050 1800
-F 0 "#PWR030" H 5050 1550 50  0001 C CNN
-F 1 "GND" H 5050 1650 50  0000 C CNN
-F 2 "" H 5050 1800 60  0000 C CNN
-F 3 "" H 5050 1800 60  0000 C CNN
-	1    5050 1800
-	1    0    0    -1  
-$EndComp
 Text HLabel 5000 3000 2    60   Output ~ 0
 RXD
 Text HLabel 5000 2900 2    60   Input ~ 0
@@ -102,10 +72,10 @@ Wire Wire Line
 Wire Wire Line
 	4800 3100 5100 3100
 $Comp
-L GND #PWR031
+L GND #PWR033
 U 1 1 55FDBFE6
 P 5050 2600
-F 0 "#PWR031" H 5050 2350 50  0001 C CNN
+F 0 "#PWR033" H 5050 2350 50  0001 C CNN
 F 1 "GND" H 5050 2450 50  0000 C CNN
 F 2 "" H 5050 2600 60  0000 C CNN
 F 3 "" H 5050 2600 60  0000 C CNN
@@ -120,7 +90,6 @@ Text HLabel 5050 2800 2    60   Output ~ 0
 MCU_RESET_N
 Text HLabel 5050 2700 2    60   Output ~ 0
 MCU_PROG_N
-Connection ~ 5200 1600
 Wire Wire Line
 	4800 2600 5050 2600
 Text HLabel 5100 3100 2    60   Output ~ 0
