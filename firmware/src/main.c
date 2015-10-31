@@ -4,7 +4,7 @@
 // Macro Definitions
 
 #define CCAN_BAUD_RATE 500000 					// Desired CAN Baud Rate
-#define UART_BAUD_RATE 9600 					// Desired UART Baud Rate
+#define UART_BAUD_RATE 57600 					// Desired UART Baud Rate
 
 #define BUFFER_SIZE 8
 
@@ -125,8 +125,8 @@ int main(void)
 	*/
 
 	msg_obj.msgobj = 1;
-	msg_obj.mode_id = 0x600;
-	msg_obj.mask = 0x7FF;
+	msg_obj.mode_id = 0x000;
+	msg_obj.mask = 0x000;
 	LPC_CCAN_API->config_rxmsgobj(&msg_obj);
 
 	/* [Tutorial] How do I send a CAN Message?

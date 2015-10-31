@@ -128,11 +128,11 @@ CXX_STD = gnu++98
 C_STD = gnu89
 
 #=============================================================================#
-# Write Configuration
+# Write and Communicate Configuration
 #=============================================================================#
 
 COMPORT = $(word 1, $(wildcard /dev/tty.usbserial-*) $(wildcard /dev/ttyUSB*))
-BAUDRATE = 115200
+BAUDRATE = 57600
 CLOCK_OSC = 12000
 
 #=============================================================================#
@@ -406,7 +406,7 @@ lint: $(C_SRCS)
 
 writeflash: all
 	@echo "Writing to" $(COMPORT)
-	@lpc21isp -NXPARM $(HEX) $(COMPORT) $(BAUDRATE) $(CLOCK_OSC)
+	@lpc21isp -NXPARM -control $(HEX) $(COMPORT) $(BAUDRATE) $(CLOCK_OSC)
 
 #-----------------------------------------------------------------------------#
 # Opening Picocom
@@ -414,7 +414,8 @@ writeflash: all
 
 com:
 	@echo "Opening" $(COMPORT)
-	@picocom -b 9600 $(COMPORT)
+	# @picocom -b 9600 $(COMPORT)
+	@lpc21isp -NXPARM -control -termonly $(HEX) $(COMPORT) $(BAUDRATE) $(CLOCK_OSC)
 
 #=============================================================================#
 # make clean
