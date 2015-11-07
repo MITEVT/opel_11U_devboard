@@ -207,7 +207,7 @@
     (add_net "Net-(P101-Pad9)")
   )
 
-  (module MITEVT_AUTOMOTIVECON:776280-1 (layer F.Cu) (tedit 5635286B) (tstamp 56352BB2)
+  (module MITEVT_AUTOMOTIVECON:776280-1 locked (layer F.Cu) (tedit 5635286B) (tstamp 56352BB2)
     (at 120.75 122.25)
     (path /56352A8A/56352AC8)
     (fp_text reference P001 (at 4 4) (layer F.SilkS)
@@ -242,7 +242,7 @@
     (pad 10 thru_hole circle (at 14.5 -3.5) (size 2 2) (drill 2) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module MITEVT_AUTOMOTIVECON:776087-1 (layer F.Cu) (tedit 56351E26) (tstamp 56352BCF)
+  (module MITEVT_AUTOMOTIVECON:776087-1 locked (layer F.Cu) (tedit 56351E26) (tstamp 56352BCF)
     (at 158.496 114.25)
     (path /56352A8A/56352B23)
     (fp_text reference P002 (at 15 12) (layer F.SilkS)
