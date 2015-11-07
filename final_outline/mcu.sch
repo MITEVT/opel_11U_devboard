@@ -82,7 +82,6 @@ F 3 "" H 10150 2900 60  0000 C CNN
 	1    9850 2550
 	1    0    0    -1  
 $EndComp
-<<<<<<< HEAD
 $Comp
 L ISO1050 U?
 U 1 1 563E22B3
@@ -94,8 +93,6 @@ F 3 "" H 2100 5250 60  0000 C CNN
 	1    1800 4900
 	-1   0    0    -1  
 $EndComp
-=======
->>>>>>> cbb76a4cbcf64c500028faa1daf871a4132fdbd6
 Text HLabel 900  4800 0    60   BiDi ~ 0
 CAN1L
 Text HLabel 900  5000 0    60   BiDi ~ 0
