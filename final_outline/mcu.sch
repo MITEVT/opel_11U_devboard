@@ -40,7 +40,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -139,7 +139,7 @@ U 1 1 563E282A
 P 1400 4250
 F 0 "C402" H 1410 4320 50  0000 L CNN
 F 1 "0.1uF" H 1410 4170 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 1400 4250 60  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1400 4250 60  0001 C CNN
 F 3 "" H 1400 4250 60  0000 C CNN
 	1    1400 4250
 	1    0    0    -1  
@@ -150,7 +150,7 @@ U 1 1 563E286E
 P 2200 4250
 F 0 "C403" H 2210 4320 50  0000 L CNN
 F 1 "0.1uF" H 2210 4170 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2200 4250 60  0001 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2200 4250 60  0001 C CNN
 F 3 "" H 2200 4250 60  0000 C CNN
 	1    2200 4250
 	1    0    0    -1  
@@ -188,17 +188,6 @@ F 3 "" H 2650 4500 60  0000 C CNN
 	1    2650 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L +3.3V #PWR08
-U 1 1 563E2B4B
-P 1900 3650
-F 0 "#PWR08" H 1900 3500 50  0001 C CNN
-F 1 "+3.3V" H 1900 3790 50  0000 C CNN
-F 2 "" H 1900 3650 60  0000 C CNN
-F 3 "" H 1900 3650 60  0000 C CNN
-	1    1900 3650
-	1    0    0    -1  
-$EndComp
 Text Label 3200 4000 2    60   ~ 0
 PIO1_11
 Text Label 3200 3900 2    60   ~ 0
@@ -218,7 +207,7 @@ PIO0_11
 NoConn ~ 3500 2500
 NoConn ~ 3500 2400
 Text HLabel 3050 2200 0    60   Input ~ 0
-MCU_RESET_N
+MCU_PROG_N
 $Comp
 L R R402
 U 1 1 563E3CB3
@@ -231,17 +220,6 @@ F 3 "" H 3200 1950 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR09
-U 1 1 563E3DE5
-P 3200 1700
-F 0 "#PWR09" H 3200 1550 50  0001 C CNN
-F 1 "+3.3V" H 3200 1840 50  0000 C CNN
-F 2 "" H 3200 1700 60  0000 C CNN
-F 3 "" H 3200 1700 60  0000 C CNN
-	1    3200 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R401
 U 1 1 563E3FD3
 P 2000 2050
@@ -250,17 +228,6 @@ F 1 "10k" V 2000 2050 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 1930 2050 30  0001 C CNN
 F 3 "" H 2000 2050 30  0000 C CNN
 	1    2000 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR010
-U 1 1 563E40DF
-P 2000 1700
-F 0 "#PWR010" H 2000 1550 50  0001 C CNN
-F 1 "+3.3V" H 2000 1840 50  0000 C CNN
-F 2 "" H 2000 1700 60  0000 C CNN
-F 3 "" H 2000 1700 60  0000 C CNN
-	1    2000 1700
 	1    0    0    -1  
 $EndComp
 Text HLabel 1600 2300 0    60   Input ~ 0
@@ -300,17 +267,6 @@ F 1 "10uF" H 5510 1220 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5500 1300 60  0001 C CNN
 F 3 "" H 5500 1300 60  0000 C CNN
 	1    5500 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR012
-U 1 1 563E4DA8
-P 4800 950
-F 0 "#PWR012" H 4800 800 50  0001 C CNN
-F 1 "+3.3V" H 4800 1090 50  0000 C CNN
-F 2 "" H 4800 950 60  0000 C CNN
-F 3 "" H 4800 950 60  0000 C CNN
-	1    4800 950 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -398,17 +354,6 @@ F 1 "0.1uF" H 7210 1570 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7200 1650 60  0001 C CNN
 F 3 "" H 7200 1650 60  0000 C CNN
 	1    7200 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR015
-U 1 1 563E70B8
-P 7900 1150
-F 0 "#PWR015" H 7900 1000 50  0001 C CNN
-F 1 "+3.3V" H 7900 1290 50  0000 C CNN
-F 2 "" H 7900 1150 60  0000 C CNN
-F 3 "" H 7900 1150 60  0000 C CNN
-	1    7900 1150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -521,17 +466,6 @@ F 3 "" H 10500 1950 60  0000 C CNN
 	1    10500 1950
 	1    0    0    -1  
 $EndComp
-$Comp
-L +3.3V #PWR022
-U 1 1 563E7F46
-P 9750 1300
-F 0 "#PWR022" H 9750 1150 50  0001 C CNN
-F 1 "+3.3V" H 9750 1440 50  0000 C CNN
-F 2 "" H 9750 1300 60  0000 C CNN
-F 3 "" H 9750 1300 60  0000 C CNN
-	1    9750 1300
-	1    0    0    -1  
-$EndComp
 Text HLabel 10600 1150 2    60   Input ~ 0
 CAN2P
 $Comp
@@ -599,9 +533,9 @@ Connection ~ 2200 3850
 Wire Wire Line
 	2200 4350 2200 4450
 Wire Wire Line
-	2200 4450 2650 4450
+	2650 4450 2200 4450
 Wire Wire Line
-	2650 4450 2650 4350
+	2650 4350 2650 4450
 Wire Wire Line
 	2650 4400 2650 4500
 Connection ~ 2650 4400
@@ -809,17 +743,6 @@ Text HLabel 10650 2450 2    60   BiDi ~ 0
 CAN2L
 Text HLabel 10650 2650 2    60   BiDi ~ 0
 CAN2H
-$Comp
-L ISO1050 U402
-U 1 1 563E5016
-P 1800 4900
-F 0 "U402" H 1450 5250 60  0000 C CNN
-F 1 "ISO1050" H 2100 5250 60  0000 C CNN
-F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 2100 5250 60  0001 C CNN
-F 3 "" H 2100 5250 60  0000 C CNN
-	1    1800 4900
-	-1   0    0    -1  
-$EndComp
 Text HLabel 7300 5200 2    60   Output ~ 0
 LED7
 Text HLabel 7300 5100 2    60   Output ~ 0
@@ -836,4 +759,16 @@ Text HLabel 7300 4500 2    60   Output ~ 0
 LED1
 Text HLabel 7300 4400 2    60   Output ~ 0
 LED0
+Text HLabel 1900 3650 1    60   Input ~ 0
++3V3
+Text HLabel 2000 1700 1    60   Input ~ 0
++3V3
+Text HLabel 3200 1700 1    60   Input ~ 0
++3V3
+Text HLabel 4800 950  1    60   Input ~ 0
++3V3
+Text HLabel 7900 1150 1    60   Input ~ 0
++3V3
+Text HLabel 9750 1300 1    60   Input ~ 0
++3V3
 $EndSCHEMATC
