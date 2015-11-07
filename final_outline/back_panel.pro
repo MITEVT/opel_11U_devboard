@@ -1,6 +1,10 @@
-update=Saturday, November 07, 2015 'AMt' 11:06:39 AM
+update=22/05/2015 07:44:53
 version=1
 last_client=kicad
+[general]
+version=1
+RootSch=
+BoardNm=
 [pcbnew]
 version=1
 LastNetListRead=
@@ -23,8 +27,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -58,9 +60,3 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_ANALOG
-LibName31=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_interface
-LibName32=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_mcontrollers
-LibName33=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_OPTO
-LibName34=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_power
-LibName35=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_REG

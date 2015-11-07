@@ -28,11 +28,18 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:MITEVT_ANALOG
+LIBS:MITEVT_interface
+LIBS:MITEVT_mcontrollers
+LIBS:MITEVT_OPTO
+LIBS:MITEVT_power
+LIBS:MITEVT_REG
+LIBS:final_outline-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -53,5 +60,11 @@ S 2800 2650 1300 1100
 U 56353BB7
 F0 "FRONT_PANEL" 60
 F1 "front_panel.sch" 60
+$EndSheet
+$Sheet
+S 4400 3950 1750 1500
+U 563E2153
+F0 "Micro_Controller" 60
+F1 "mcu.sch" 60
 $EndSheet
 $EndSCHEMATC
