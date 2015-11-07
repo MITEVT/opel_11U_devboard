@@ -790,21 +790,21 @@ Wire Wire Line
 Wire Wire Line
 	6550 4300 6150 4300
 Wire Wire Line
-	6550 4400 6150 4400
+	6150 4400 7300 4400
 Wire Wire Line
-	6550 4500 6150 4500
+	6150 4500 7300 4500
 Wire Wire Line
-	6550 4600 6150 4600
+	6150 4600 7300 4600
 Wire Wire Line
-	6550 4700 6150 4700
+	6150 4700 7300 4700
 Wire Wire Line
-	6550 4900 6150 4900
+	6150 4900 7300 4900
 Wire Wire Line
-	6550 5000 6150 5000
+	6150 5000 7300 5000
 Wire Wire Line
-	6550 5100 6150 5100
+	6150 5100 7300 5100
 Wire Wire Line
-	6550 5200 6150 5200
+	6150 5200 7300 5200
 Wire Wire Line
 	6150 4800 6950 4800
 Wire Wire Line
@@ -926,4 +926,20 @@ F 3 "" H 2100 5250 60  0000 C CNN
 	1    1800 4900
 	-1   0    0    -1  
 $EndComp
+Text HLabel 7300 5200 2    60   Output ~ 0
+LED7
+Text HLabel 7300 5100 2    60   Output ~ 0
+LED6
+Text HLabel 7300 5000 2    60   Output ~ 0
+LED5
+Text HLabel 7300 4900 2    60   Output ~ 0
+LED4
+Text HLabel 7300 4700 2    60   Output ~ 0
+LED3
+Text HLabel 7300 4600 2    60   Output ~ 0
+LED2
+Text HLabel 7300 4500 2    60   Output ~ 0
+LED1
+Text HLabel 7300 4400 2    60   Output ~ 0
+LED0
 $EndSCHEMATC
