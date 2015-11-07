@@ -1,4 +1,4 @@
-update=Saturday, November 07, 2015 'AMt' 11:06:39 AM
+update=Saturday, November 07, 2015 'PMt' 12:54:59 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../EVT_KICAD_LIBS
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,9 +58,10 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_ANALOG
-LibName31=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_interface
-LibName32=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_mcontrollers
-LibName33=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_OPTO
-LibName34=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_power
-LibName35=/Users/SirCharles/evt_files/EVT_KICAD_LIBS/MITEVT_REG
+LibName30=MITEVT_ANALOG
+LibName31=MITEVT_CONTACTORS
+LibName32=MITEVT_interface
+LibName33=MITEVT_mcontrollers
+LibName34=MITEVT_OPTO
+LibName35=MITEVT_power
+LibName36=MITEVT_REG
