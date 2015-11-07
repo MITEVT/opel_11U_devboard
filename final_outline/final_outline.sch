@@ -32,7 +32,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -45,7 +45,13 @@ $EndDescr
 $Sheet
 S 6550 2600 1850 1250
 U 56352A8A
-F0 "BACKPANEL" 60
+F0 "BACK_PANEL" 60
 F1 "back_panel.sch" 60
+$EndSheet
+$Sheet
+S 2800 2650 1300 1100
+U 56353BB7
+F0 "FRONT_PANEL" 60
+F1 "front_panel.sch" 60
 $EndSheet
 $EndSCHEMATC
