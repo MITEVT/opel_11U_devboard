@@ -39,3 +39,4 @@
 firmware/bin/
 firmware/testbin/
 firmware/doc/
+*.bak
