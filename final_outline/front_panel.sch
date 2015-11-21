@@ -72,15 +72,15 @@ F 3 "" H 3000 2500 60  0000 C CNN
 	1    3000 3700
 	1    0    0    -1  
 $EndComp
-Text HLabel 2800 2300 0    60   Output ~ 0
-+5V
 Text HLabel 2800 2050 0    60   Output ~ 0
-RXD
-Text HLabel 4300 2300 2    60   Input ~ 0
-TXD
-Text HLabel 2800 1800 0    60   Output ~ 0
-MCU_RESET_N
++5V
 Text HLabel 4300 2050 2    60   Output ~ 0
+RXD
+Text HLabel 2800 1800 0    60   Input ~ 0
+TXD
+Text HLabel 2800 2300 0    60   Output ~ 0
+MCU_RESET_N
+Text HLabel 4300 2300 2    60   Output ~ 0
 MCU_PROG_N
 $Comp
 L GND #PWR05
