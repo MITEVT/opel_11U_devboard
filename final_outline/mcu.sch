@@ -170,8 +170,6 @@ Text Label 4650 3950 2    60   ~ 0
 PIO1_10
 Text Label 4650 3850 2    60   ~ 0
 PIO1_4
-Text Label 4650 3750 2    60   ~ 0
-PIO1_3
 Text Label 4650 3650 2    60   ~ 0
 PIO1_2
 Text Label 4650 3550 2    60   ~ 0
@@ -292,6 +290,83 @@ Text Label 8000 5150 0    60   ~ 0
 PIO3_2
 Text Label 8000 5250 0    60   ~ 0
 PIO3_3
+Text HLabel 8750 4950 2    60   Output ~ 0
+LED7
+Text HLabel 8750 5050 2    60   Output ~ 0
+LED6
+Text HLabel 4200 3750 0    60   Output ~ 0
+LED5
+Text HLabel 8750 5250 2    60   Output ~ 0
+LED4
+Text HLabel 8750 4550 2    60   Output ~ 0
+LED3
+Text HLabel 8750 4450 2    60   Output ~ 0
+LED2
+Text HLabel 8750 4650 2    60   Output ~ 0
+LED1
+Text HLabel 8750 4750 2    60   Output ~ 0
+LED0
+$Comp
+L +3.3V #PWR013
+U 1 1 5647852E
+P 3450 1750
+F 0 "#PWR013" H 3450 1600 50  0001 C CNN
+F 1 "+3.3V" H 3450 1890 50  0000 C CNN
+F 2 "" H 3450 1750 60  0000 C CNN
+F 3 "" H 3450 1750 60  0000 C CNN
+	1    3450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR014
+U 1 1 56478628
+P 4650 1750
+F 0 "#PWR014" H 4650 1600 50  0001 C CNN
+F 1 "+3.3V" H 4650 1890 50  0000 C CNN
+F 2 "" H 4650 1750 60  0000 C CNN
+F 3 "" H 4650 1750 60  0000 C CNN
+	1    4650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR015
+U 1 1 56478697
+P 6250 1000
+F 0 "#PWR015" H 6250 850 50  0001 C CNN
+F 1 "+3.3V" H 6250 1140 50  0000 C CNN
+F 2 "" H 6250 1000 60  0000 C CNN
+F 3 "" H 6250 1000 60  0000 C CNN
+	1    6250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR016
+U 1 1 56478953
+P 3350 3700
+F 0 "#PWR016" H 3350 3550 50  0001 C CNN
+F 1 "+3.3V" H 3350 3840 50  0000 C CNN
+F 2 "" H 3350 3700 60  0000 C CNN
+F 3 "" H 3350 3700 60  0000 C CNN
+	1    3350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR017
+U 1 1 564789D8
+P 2650 3650
+F 0 "#PWR017" H 2650 3500 50  0001 C CNN
+F 1 "+5V" H 2650 3790 50  0000 C CNN
+F 2 "" H 2650 3650 60  0000 C CNN
+F 3 "" H 2650 3650 60  0000 C CNN
+	1    2650 3650
+	1    0    0    -1  
+$EndComp
+Text Label 4250 4750 0    60   ~ 0
+CAN_RXD
+Text Label 4250 4850 0    60   ~ 0
+CAN_TXD
+Text Label 4650 3750 2    60   ~ 0
+PIO1_3
 Wire Wire Line
 	4950 4750 3850 4750
 Wire Wire Line
@@ -355,7 +430,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 3650 4950 3650
 Wire Wire Line
-	4650 3750 4950 3750
+	4200 3750 4950 3750
 Wire Wire Line
 	4650 3850 4950 3850
 Wire Wire Line
@@ -440,82 +515,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 5050 8750 5050
 Wire Wire Line
-	7600 5150 8750 5150
+	7600 5150 8000 5150
 Wire Wire Line
 	7600 5250 8750 5250
-Text HLabel 8750 4950 2    60   Output ~ 0
-LED7
-Text HLabel 8750 5050 2    60   Output ~ 0
-LED6
-Text HLabel 8750 5150 2    60   Output ~ 0
-LED5
-Text HLabel 8750 5250 2    60   Output ~ 0
-LED4
-Text HLabel 8750 4550 2    60   Output ~ 0
-LED3
-Text HLabel 8750 4450 2    60   Output ~ 0
-LED2
-Text HLabel 8750 4650 2    60   Output ~ 0
-LED1
-Text HLabel 8750 4750 2    60   Output ~ 0
-LED0
-$Comp
-L +3.3V #PWR013
-U 1 1 5647852E
-P 3450 1750
-F 0 "#PWR013" H 3450 1600 50  0001 C CNN
-F 1 "+3.3V" H 3450 1890 50  0000 C CNN
-F 2 "" H 3450 1750 60  0000 C CNN
-F 3 "" H 3450 1750 60  0000 C CNN
-	1    3450 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR014
-U 1 1 56478628
-P 4650 1750
-F 0 "#PWR014" H 4650 1600 50  0001 C CNN
-F 1 "+3.3V" H 4650 1890 50  0000 C CNN
-F 2 "" H 4650 1750 60  0000 C CNN
-F 3 "" H 4650 1750 60  0000 C CNN
-	1    4650 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR015
-U 1 1 56478697
-P 6250 1000
-F 0 "#PWR015" H 6250 850 50  0001 C CNN
-F 1 "+3.3V" H 6250 1140 50  0000 C CNN
-F 2 "" H 6250 1000 60  0000 C CNN
-F 3 "" H 6250 1000 60  0000 C CNN
-	1    6250 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR016
-U 1 1 56478953
-P 3350 3700
-F 0 "#PWR016" H 3350 3550 50  0001 C CNN
-F 1 "+3.3V" H 3350 3840 50  0000 C CNN
-F 2 "" H 3350 3700 60  0000 C CNN
-F 3 "" H 3350 3700 60  0000 C CNN
-	1    3350 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR017
-U 1 1 564789D8
-P 2650 3650
-F 0 "#PWR017" H 2650 3500 50  0001 C CNN
-F 1 "+5V" H 2650 3790 50  0000 C CNN
-F 2 "" H 2650 3650 60  0000 C CNN
-F 3 "" H 2650 3650 60  0000 C CNN
-	1    2650 3650
-	1    0    0    -1  
-$EndComp
-Text Label 4250 4750 0    60   ~ 0
-CAN_RXD
-Text Label 4250 4850 0    60   ~ 0
-CAN_TXD
 $EndSCHEMATC
