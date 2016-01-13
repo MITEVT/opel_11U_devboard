@@ -35,7 +35,6 @@ LIBS:MITEVT_mcontrollers
 LIBS:MITEVT_OPTO
 LIBS:MITEVT_power
 LIBS:MITEVT_REG
-LIBS:zsr1000gta
 LIBS:final_outline-cache
 EELAYER 25 0
 EELAYER END
@@ -153,4 +152,27 @@ Wire Wire Line
 	2500 1100 3100 1100
 Connection ~ 3100 1800
 Connection ~ 1600 1800
+NoConn ~ 5200 1500
+NoConn ~ 5200 1600
+NoConn ~ 5200 1700
+NoConn ~ 5200 1800
+NoConn ~ 5200 1900
+NoConn ~ 5200 2000
+NoConn ~ 5200 2100
+NoConn ~ 5200 2200
+NoConn ~ 5200 2300
+NoConn ~ 5200 2400
+NoConn ~ 5200 2500
+NoConn ~ 5200 2600
+NoConn ~ 5200 2700
+NoConn ~ 5200 2800
+NoConn ~ 5200 2900
+NoConn ~ 5200 3000
+NoConn ~ 5200 3100
+NoConn ~ 5200 3200
+NoConn ~ 5200 3300
+NoConn ~ 5200 3400
+NoConn ~ 5200 3500
+NoConn ~ 5200 3600
+NoConn ~ 5200 3700
 $EndSCHEMATC
