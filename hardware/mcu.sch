@@ -615,15 +615,13 @@ Text Label 9300 5300 2    60   ~ 0
 PIO2_7
 Text Label 6600 3800 0    60   ~ 0
 PIO0_1
-Text Label 9300 5100 2    60   ~ 0
-PIO2_6
 Text Label 9300 5200 2    60   ~ 0
 PIO0_1
-Text Label 9300 5000 2    60   ~ 0
+Text Label 9300 5100 2    60   ~ 0
 PIO3_2
-Text Label 9300 4900 2    60   ~ 0
+Text Label 9300 5000 2    60   ~ 0
 PIO1_4
-Text Label 9300 4800 2    60   ~ 0
+Text Label 9300 4900 2    60   ~ 0
 PIO1_3
 $Comp
 L +5V #PWR024
@@ -642,7 +640,7 @@ Text Label 6600 3600 0    60   ~ 0
 PIO2_3
 Text Label 7500 4000 0    60   ~ 0
 PIO0_11
-Text Label 9300 4700 2    60   ~ 0
+Text Label 9300 4800 2    60   ~ 0
 PIO2_3
 $Comp
 L CONN_01X17 P1
@@ -655,7 +653,7 @@ F 3 "" H 9900 5200 60  0000 C CNN
 	1    9900 5200
 	1    0    0    -1  
 $EndComp
-Text Label 9300 4600 2    60   ~ 0
+Text Label 9300 4700 2    60   ~ 0
 PIO2_2
 $Comp
 L GND #PWR025
@@ -703,7 +701,7 @@ Connection ~ 4800 6000
 Wire Wire Line
 	4600 1850 4600 1700
 Wire Wire Line
-	4600 1700 4800 1700
+	4800 1700 4600 1700
 Wire Wire Line
 	4800 1150 4800 1850
 Connection ~ 4800 1700
@@ -963,7 +961,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 4000 7500 4000
 Wire Wire Line
-	9300 4600 9700 4600
+	9050 4600 9700 4600
 Wire Wire Line
 	9300 4500 9700 4500
 Wire Wire Line
@@ -1044,4 +1042,17 @@ F 3 "" H 1800 3850 50  0000 C CNN
 	1    1800 3850
 	1    0    0    -1  
 $EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 56969D5D
+P 9050 4250
+F 0 "#PWR?" H 9050 4100 50  0001 C CNN
+F 1 "+3.3V" H 9050 4390 50  0000 C CNN
+F 2 "" H 9050 4250 50  0000 C CNN
+F 3 "" H 9050 4250 50  0000 C CNN
+	1    9050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4600 9050 4250
 $EndSCHEMATC
