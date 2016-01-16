@@ -8,8 +8,8 @@
 // -------------------------------------------------------------
 // Global Variables
 
-extern const uint32_t OscRateIn; 
-volatile uint32_t msTicks; 						// Running count of milliseconds since start
+extern const uint32_t OscRateIn; 				/** @brief Board Oscillator Frequency (Hz) **/
+volatile uint32_t msTicks; 						/** @brief System Time (ms) **/
 
 // -------------------------------------------------------------
 // Configuration Macros
@@ -47,6 +47,11 @@ volatile uint32_t msTicks; 						// Running count of milliseconds since start
 // -------------------------------------------------------------
 // Board Level Function Prototypes
 
+/**
+ * Initialize the Core Systick Timer
+ * 
+ * @return true if error
+ */
 int8_t Board_SysTick_Init(void);
 
 void Board_LEDs_Init(void);
