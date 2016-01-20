@@ -78,8 +78,14 @@ int main(void)
 {
 
 	//---------------
+	// Initialize UART Communication
+	Board_UART_Init(UART_BAUD_RATE);
+	Board_UART_Println("Started up");
+
+	//---------------
 	// Initialize SysTick Timer to generate millisecond count
 	if (Board_SysTick_Init()) {
+		Board_UART_Println("Failed to Initialize SysTick. ");
 		// Unrecoverable Error. Hang.
 		while(1);
 	}
@@ -88,11 +94,6 @@ int main(void)
 	// Initialize GPIO and LED as output
 	Board_LEDs_Init();
 	Board_LED_On(LED0);
-
-	//---------------
-	// Initialize UART Communication
-	Board_UART_Init(UART_BAUD_RATE);
-	Board_UART_Println("Started up");
 
 	//---------------
 	// Initialize CAN  and CAN Ring Buffer
@@ -180,8 +181,46 @@ int main(void)
 				case 'a':
 					Board_UART_Println("Sending CAN with ID: 0x600");
 					msg_obj.msgobj = 2;
+					msg_obj.mode_id = 0x703;
 					msg_obj.dlc = 2;
-					msg_obj.data_16[0] = 0xAABB;
+					msg_obj.data_16[0] = 300;
+					LPC_CCAN_API->can_transmit(&msg_obj);
+					break;
+				case 'b':
+					Board_UART_Println("Sending CAN with ID: 0x600");
+					msg_obj.msgobj = 2;
+					msg_obj.mode_id = 0x703;
+					msg_obj.dlc = 2;
+					msg_obj.data_16[0] = 600;
+					LPC_CCAN_API->can_transmit(&msg_obj);
+					break;
+				case 'c':
+					Board_UART_Println("Sending CAN with ID: 0x600");
+					msg_obj.msgobj = 2;
+					msg_obj.mode_id = 0x703;
+					msg_obj.dlc = 2;
+					msg_obj.data_16[0] = 0;
+					LPC_CCAN_API->can_transmit(&msg_obj);
+					break;
+				case 'd':
+					msg_obj.msgobj = 2;
+					msg_obj.mode_id = 0x700;
+					msg_obj.dlc = 2;
+					msg_obj.data_16[0] = 0;
+					LPC_CCAN_API->can_transmit(&msg_obj);
+					break;
+				case 'e':
+					msg_obj.msgobj = 2;
+					msg_obj.mode_id = 0x700;
+					msg_obj.dlc = 2;
+					msg_obj.data_16[0] = 32000;
+					LPC_CCAN_API->can_transmit(&msg_obj);
+					break;
+				case 'f':
+					msg_obj.msgobj = 2;
+					msg_obj.mode_id = 0x700;
+					msg_obj.dlc = 2;
+					msg_obj.data_16[0] = 65500;
 					LPC_CCAN_API->can_transmit(&msg_obj);
 					break;
 				default:

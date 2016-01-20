@@ -19,7 +19,7 @@ volatile uint32_t msTicks; 						/** @brief System Time (ms) **/
 // Pin Descriptions
 
 #define LED0_PORT 2
-#define LED0_PIN 10
+#define LED0_PIN 5
 
 #define LED1_PORT 0
 #define LED1_PIN 6
@@ -41,8 +41,8 @@ volatile uint32_t msTicks; 						/** @brief System Time (ms) **/
 #define UART_RX UART_RX_PORT, UART_RX_PIN
 #define UART_TX UART_TX_PORT, UART_TX_PIN
 
-#define Board_LED_On(led) Chip_GPIO_SetPinState(LPC_GPIO, led, true)
-#define Board_LED_Off(led) Chip_GPIO_SetPinState(LPC_GPIO, led, false)
+#define Board_LED_On(led) {Chip_GPIO_SetPinState(LPC_GPIO, led, true);}
+#define Board_LED_Off(led) {Chip_GPIO_SetPinState(LPC_GPIO, led, false);}
  
 // -------------------------------------------------------------
 // Board Level Function Prototypes
