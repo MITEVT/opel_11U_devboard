@@ -56,7 +56,7 @@ U 1 1 56353C28
 P 3550 2050
 F 0 "P100" H 3550 2250 50  0000 C CNN
 F 1 "ISP" H 3550 1850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03" H 3550 850 60  0001 C CNN
+F 2 "Connectors_Molex:Connector_Microfit3_Header_02x03_Angled_43045-060x" H 3550 850 60  0001 C CNN
 F 3 "" H 3550 850 60  0000 C CNN
 	1    3550 2050
 	1    0    0    -1  

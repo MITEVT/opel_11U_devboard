@@ -213,7 +213,6 @@ $EndComp
 Wire Wire Line
 	4700 1450 4700 2150
 Connection ~ 4700 2150
-Connection ~ 4300 2150
 Wire Wire Line
 	6800 1450 4700 1450
 Wire Wire Line
